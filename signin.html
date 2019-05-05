@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+	<title>Sign In</title>
+	<meta charset="UTF-8"/>
+	<meta name="author" content="Team 'TRIO', IUT Students"/>
+	<meta name="description" content="Company Landing Page"/>
+	<meta name="keywords" content="Khiva, Restaurant, Uzbekistan, etc."/>
+	<meta name="generator" content="HTML, CSS, PHP, MySQL, JavaScript, etc."/>
+	<meta name="revised" content="04.29.2019"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta http-equiv="content-type" content="text/html, text/css, audio/mpeg, image/jpeg etc."/>
+	<meta http-equiv="expires" content="-"/>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<img src="images/left.gif" id="headersize" alt="building"/>
+			<h1>Khiva Restaurant in Khorezm</h1>
+			<img src="images/right.gif" id="headersize" alt="building"/>
+		</div>
+		<div class="menu">
+			<ul class="menuList nounderline m_bckgrnd">
+				<li class="menuItem"><a href="index.html">Home</a></li>
+				<li class="menuItem"><a href="services.html">Services</a></li>
+				<li class="menuItem"><a href="contacts.html">Contact Us</a></li>
+				<li class="menuItem">
+					<a href="signin.html" id="si">Sign In</a>
+					<span>|</span> 
+					<a href="signup.html" id="su">Sign Up</a>
+				</li>
+			</ul>
+		</div>
+		<div class="body">
+				<div class="section">
+					<img src="images/logo.gif" alt="logo" id="body_logo"/>
+					<h1>Log In</h1>
+					<h2>Sign In to Start Making Orders! </h2>
+				</div>
+				<div class="section">
+					<form action="success.php" method="post" enctype="multipart/form-data">
+						<fieldset>
+							<legend class="centerarial" style="color: white">Login Form</legend>
+
+							<label for="login">Login</label>
+						    <input type="text" id="login" name="login" max="10" placeholder="Enter Login" required>	
+							
+							<label for="password">Password</label>
+						    <input type="password" id="password" name="password" maxlength="10" placeholder="Enter Password" required>
+
+						    <label>Remember Me:</label>
+						    <input type="checkbox" name="Remember" checked=""><br/><br/>
+							
+							<label>Login As:</label>
+						    <input type="radio" name="loginAs" value="Admin">Admin 
+						    <input type="radio" name="loginAs" value="User">User       
+							<br/><br/>
+							<label>No Account? <a href="signup.html">Sign Up</a></label>
+						   	<br/><br/>
+							<input type="submit" value="Login">
+						    <input type="reset" value="Reset">
+						</fieldset>
+					</form>
+				</div>		
+		</div>
+		<div class="footer">
+			<div class="block">
+				<ul class="footerList">
+					<li style="color: #33ccff" class="footerItem footerItemUnique centerarial">
+						<strong>Work Plan</strong>
+					</li>
+					<li style="color: #33ccff" class="footerItem">
+						<strong>Breakfast:</strong> 6:30 a.m. to 10:30 a.m.
+					</li>
+					<li style="color: #0099cc" class="footerItem"><strong>Lunch:</strong> noon - 3:00 p.m.</li>
+					<li style="color: #76bdd5" class="footerItem"><strong>Dinner:</strong> 6:30 – 10.30 p.m.</li>
+					<li style="color: #ff9933" class="footerItem"><strong>Weekends from 11 a.m.</strong></li>
+				</ul>
+			</div>
+			<div class="block">
+				<ul class="footerList footerListUnique nounderline">
+					<li class="footerItem"><img src="images/logo.gif" alt="logo" id="footer_logo"/></li>
+					<li class="footerItem"><a href="signup.html">Make Order</a></li>
+				</ul>
+			</div>
+			<div class="block">
+				<ul class="footerList">
+					<li style="color: #cc6600" class="footerItem footerItemUnique centerarial">
+						<strong>Contact Information</strong>
+					</li>
+					<li class="footerItem">
+						<i class="fa fa-envelope" aria-hidden="true" style="color: #cc6600"> khivarestaurant@gmail.com</i>
+					</li>
+					<li class="footerItem">
+						<i class="fa fa-telegram" aria-hidden="true" style="color: #33ccff"> @khivarestaurant</i>
+					</li>
+					<li class="footerItem">
+						<i class="fa fa-phone-square" aria-hidden="true" style="color: #76bdd5"> +998973304897</i>
+					</li>
+					<li class="footerItem">
+						<i class="fa fa-address-card" aria-hidden="true" style="color: #ff9933"> Khiva, Khorezm, Uzbekistan</i>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
